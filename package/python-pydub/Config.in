@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_PYDUB
+	bool "python-pydub"
+	help
+	  Manipulate audio with an simple and easy high level
+	  interface.
+
+	  http://pydub.com

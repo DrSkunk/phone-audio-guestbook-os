@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/pydub/json
+md5  9562da47ceb230222348116e61117220  pydub-0.25.1.tar.gz
+sha256  980a33ce9949cab2a569606b65674d748ecbca4f0796887fd6f46173a7b0d30f  pydub-0.25.1.tar.gz
+# Locally computed sha256 checksums
+sha256  ae856536224cc7a389e968771fc5f259814bdd0da63539cf72282adbaef6897a  LICENSE

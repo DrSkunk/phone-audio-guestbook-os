@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_PHONE_AUDIO_GUESTBOOK_PATH/package/python-pyaudio/Config.in"
+source "$BR2_EXTERNAL_PHONE_AUDIO_GUESTBOOK_PATH/package/python-pydub/Config.in"
