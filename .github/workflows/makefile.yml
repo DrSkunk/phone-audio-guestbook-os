@@ -1,0 +1,31 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+    - uses: actions/checkout@v3
+    - name: Checkout submodules
+      run: git submodule update --init --recursive
+      
+    - name: Copy device config
+      working-directory: buildroot
+      run: make BR2_EXTERNAL=../ phone_guestbook_rpi_defconfig
+
+    - name: Install dependencies
+      working-directory: buildroot
+      run: make BR2_EXTERNAL=../
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: ${{ github.event.head_commit.message }}
+        files: buildroot/output/images/sdcard.img
