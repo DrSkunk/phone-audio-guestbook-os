@@ -2,9 +2,8 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags:        
+      - '**'   
 
 jobs:
   build:
@@ -28,9 +27,6 @@ jobs:
 
     - name: set env
       run: echo "NOW=$(date +'%Y.%m.%d-%H.%M')" >> $GITHUB_ENV
-      
-    - name: Create git tag
-      run: git tag "${{ env.NOW }}"
 
     - name: Release
       uses: softprops/action-gh-release@v1
