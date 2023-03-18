@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_PYAUDIO
+	bool "python-pyaudio"
+	help
+	  Cross-platform audio I/O with PortAudio.
+
+	  https://people.csail.mit.edu/hubert/pyaudio/

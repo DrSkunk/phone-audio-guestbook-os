@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/pyaudio/json
+md5  41199ffd2abbdaf1ce6b88cf8af48cc5  PyAudio-0.2.13.tar.gz
+sha256  26bccc81e4243d1c0ff5487e6b481de6329fcd65c79365c267cef38f363a2b56  PyAudio-0.2.13.tar.gz
+# Locally computed sha256 checksums
+sha256  7e7b5596b31bfa1ccf0f636e8344e67a686265e091c0dd360f11b66dc82abc54  LICENSE.txt
